@@ -31,5 +31,5 @@ jobs:
     - run: |
         git config --global user.email ${{secrets.TEST_APP_EMAIL}}
         git config --global user.name ${{secrets.TEST_APP_USERNAME}}
-        git remote set-url origin https://${{secrets.TEST_APP_PERSONAL_ACCESS_TOKEN}}@github.com/${{secrets.TEST_APP_USERNAME}}>/test_app>.git
+        git remote set-url origin https://${{secrets.TEST_APP_PERSONAL_ACCESS_TOKEN}}@github.com/${{secrets.TEST_APP_USERNAME}}/test_app.git
         npm run deploy
